@@ -1,7 +1,7 @@
 import logging
 import os
 import telegram
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardRemove
 from telegram.constants import ParseMode
 from telegram.ext import (
     Updater,
@@ -144,6 +144,7 @@ def main():
         entry_points=[CommandHandler('settings', start_settings)],
         states={
             CHOOSING: [CallbackQueryHandler(select_option)],
+            STATE_ONE: [MessageHandler(filters.TEXT & ~filters.COMMAND, next)],
         },
         fallbacks=[],
     )
