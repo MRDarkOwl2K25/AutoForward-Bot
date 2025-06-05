@@ -5,9 +5,8 @@
   "logo": "https://example.com/path/to/your/logo.png",
   "keywords": ["telegram", "bot", "forward", "python"],
   "addons": [
-    "heroku-postgresql:basic", 
-    "scheduler:standard"
-  ],
+  "scheduler:standard"
+],
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID",
