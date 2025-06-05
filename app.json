@@ -5,8 +5,8 @@
   "logo": "https://example.com/path/to/your/logo.png",
   "keywords": ["telegram", "bot", "forward", "python"],
   "addons": [
-  "scheduler:standard"
-],
+    "scheduler:standard"
+  ],
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID",
@@ -30,7 +30,7 @@
   },
   "formation": {
     "worker": {
-      "quantity": 1,
-      "size": "eco"
+      "quantity": 1
+    }
   }
 }
