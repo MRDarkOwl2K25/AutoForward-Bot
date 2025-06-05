@@ -1,5 +1,5 @@
-from pyrogram import Client, filters
-from pyrogram.types import Message
+from pyrofork import Client, filters
+from pyrofork.types import Message
 
 # Import your Database class and other necessary modules
 from database import Database
